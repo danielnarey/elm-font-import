@@ -1,5 +1,4 @@
 import Html exposing (Html, Attribute)
-import Html.App as App
 import Html.Attributes as Attributes
 import Html.Events as Events
 import Markdown
@@ -9,7 +8,7 @@ import FontImport
 -- Scroll to bottom for `FontImport` use example
 
 main =
-  App.beginnerProgram
+  Html.beginnerProgram
     { model = chapter1
     , update = update
     , view = view
@@ -116,7 +115,7 @@ radioButton (labelString, msg) =
     inputElement =
       []
         |> Html.input
-          [ Attributes.type' "radio"
+          [ Attributes.type_ "radio"
           , Attributes.name "font-size"
           , Events.onClick msg
           ]

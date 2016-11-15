@@ -23,7 +23,6 @@ module FontImport exposing
 import Toolkit.Operators exposing (..)
 import Toolkit.Helpers as Helpers
 import Html exposing (Html)
-import String
 
 
 {-| Represents a family of fonts that may have multiple variants and character
@@ -97,8 +96,8 @@ toImportDirective fontFamilies =
     encodeFamily family =
       family.name
         |> encodeName
-        |++ (family.variants |> encodeVariants)
-        |++ (family.subsets |> encodeSubsets)
+        |++ family.variants ||> encodeVariants
+        |++ family.subsets ||> encodeSubsets
 
     encodeName name =
       name
@@ -106,7 +105,7 @@ toImportDirective fontFamilies =
         |> String.join "+"
 
     encodeVariants variants =
-      if variants |> List.isEmpty then
+      if variants ||> List.isEmpty then
         ""
       else
         variants
@@ -114,7 +113,7 @@ toImportDirective fontFamilies =
           |> (++) ":"
 
     encodeSubsets subsets =
-      if subsets |> List.isEmpty then
+      if subsets ||> List.isEmpty then
         ""
       else
         subsets
