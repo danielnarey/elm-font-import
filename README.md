@@ -10,4 +10,4 @@ for a full working example.
 __Dependencies:__
 - [elm-lang/core/5.0.0](http://package.elm-lang.org/packages/elm-lang/core/5.0.0)
 - [elm-lang/html/2.0.0](http://package.elm-lang.org/packages/elm-lang/html/2.0.0)
-- [danielnarey/elm-toolkit/3.0.0](http://package.elm-lang.org/packages/danielnarey/elm-toolkit/3.0.0)
+- [danielnarey/elm-toolkit/4.0.0](http://package.elm-lang.org/packages/danielnarey/elm-toolkit/4.0.0)

@@ -105,7 +105,7 @@ toImportDirective fontFamilies =
         |> String.join "+"
 
     encodeVariants variants =
-      if variants ||> List.isEmpty then
+      if variants |> List.isEmpty then
         ""
       else
         variants
@@ -113,7 +113,7 @@ toImportDirective fontFamilies =
           |> (++) ":"
 
     encodeSubsets subsets =
-      if subsets ||> List.isEmpty then
+      if subsets |> List.isEmpty then
         ""
       else
         subsets

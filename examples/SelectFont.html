@@ -8125,7 +8125,7 @@ var _elm_lang$html$Html$menuitem = _elm_lang$html$Html$node('menuitem');
 var _elm_lang$html$Html$menu = _elm_lang$html$Html$node('menu');
 var _danielnarey$elm_font_import$FontImport$toImportDirective = function (fontFamilies) {
 	var encodeSubsets = function (subsets) {
-		return A2(_danielnarey$elm_toolkit$Toolkit_Operators_ops['||>'], subsets, _elm_lang$core$List$isEmpty) ? '' : A2(
+		return _elm_lang$core$List$isEmpty(subsets) ? '' : A2(
 			F2(
 				function (x, y) {
 					return A2(_elm_lang$core$Basics_ops['++'], x, y);
@@ -8134,7 +8134,7 @@ var _danielnarey$elm_font_import$FontImport$toImportDirective = function (fontFa
 			A2(_elm_lang$core$String$join, ',', subsets));
 	};
 	var encodeVariants = function (variants) {
-		return A2(_danielnarey$elm_toolkit$Toolkit_Operators_ops['||>'], variants, _elm_lang$core$List$isEmpty) ? '' : A2(
+		return _elm_lang$core$List$isEmpty(variants) ? '' : A2(
 			F2(
 				function (x, y) {
 					return A2(_elm_lang$core$Basics_ops['++'], x, y);
