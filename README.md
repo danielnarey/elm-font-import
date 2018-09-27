@@ -1,3 +1,7 @@
+# Not updated for Elm 0.19
+
+---
+
 ## Helpers for importing fonts from Google Fonts API
 
 This library contains a set of constructors that make it ridiculously easy to
